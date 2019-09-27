@@ -6,7 +6,7 @@ module.exports = {
   output: {
     filename: 'app.bundle.js',
     chunkFilename: 'chunk-[name].bundle.js',
-    path: path.resolve(__dirname, "dist/frontend")
+    path: path.resolve(__dirname, "dist")
   },
   plugins: [
     new HtmlWebpackPlugin({
