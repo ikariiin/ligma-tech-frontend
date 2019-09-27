@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: path.join(__dirname, "src", "frontend", 'mounter.tsx'),
+  entry: path.join("src", 'mounter.tsx'),
   output: {
     filename: 'app.bundle.js',
     chunkFilename: 'chunk-[name].bundle.js',
@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(path.resolve(__dirname, 'src/frontend'), 'index.html')
+      template: path.join("src", 'index.html')
     })
   ],
   module: {
